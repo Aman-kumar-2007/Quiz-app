@@ -24,7 +24,6 @@ a {
     display: flex;
     width: 100%;
 }
-
 .menu-top {
     display: flex;
     justify-content: center;
@@ -51,18 +50,35 @@ ul {
 }
 
 .menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 10px;
-    width: 220px;
-    /* border: 1px solid black; */
-    box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
-    height: 100vh;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  width: 220px;
+  height: 100vh;
+  background: white;
+  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+#after-menu-hide{
+    display: none;
+    padding: 20px;
+}
+
+#menubtn{
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+}
+#menubtn-after{
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+}
 .header {
     height: 70px;
     /* border: 1px solid black; */
