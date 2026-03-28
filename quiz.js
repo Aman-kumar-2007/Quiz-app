@@ -166,7 +166,7 @@ function submitQuiz() {
     document.body.innerHTML = `
     <div style = "display:flex; flex-direction : column; gap:15px; ">
     <h1>Your Score: ${score} / ${questions.length}</h1>
-    <h2>Total Correct: ${totalCorrect}</h2>
+    <h2>Total Correct: ${score}</h2>
     <h2>Highest Score: ${highestScore}</h2>
     <a href="index.html" style="border: 1px solid black; height:40px; padding: 10px; border-radius: 10px; width: 130px; font-weight: bold;">Go Home</a>
     </div>

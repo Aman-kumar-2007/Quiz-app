@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: "Comic Relief", system-ui;
 }
+
 body {
     background-color: #FFFFFF;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -24,6 +25,7 @@ a {
     display: flex;
     width: 100%;
 }
+
 .menu-top {
     display: flex;
     justify-content: center;
@@ -50,48 +52,67 @@ ul {
 }
 
 .menu-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding: 10px;
-  width: 220px;
-  height: 100vh;
-  background: white;
-  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    width: 220px;
+    height: 100vh;
+    background: white;
+    box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-#after-menu-hide{
+#after-menu-hide {
     display: none;
     padding: 20px;
 }
 
-#menubtn{
+#menubtn-res{
+    display: flex;
+}
+#menubtn {
     outline: none;
     border: none;
     background: #FFFFFF;
     cursor: pointer;
     font-size: 17px;
 }
-#menubtn-after{
+
+#menubtn-after {
     border: none;
     background: #FFFFFF;
     cursor: pointer;
     font-size: 17px;
 }
-.header {
-    height: 70px;
+
+.head {
+    height: 100%;
+    max-height: 70px;
     /* border: 1px solid black; */
     width: 100%;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-menus{
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 15px;
 }
 
+ #menubtn-res {
+        border: none;
+        background: #FFFFFF;
+        cursor: pointer;
+        font-size: 17px;
+    }
 .join-lobby {
-    height: 40px;
+    height: 100%;
+    max-height: 40px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -104,7 +125,8 @@ ul {
 }
 
 .start-quiz {
-    height: 40px;
+    height: 100%;
+    max-height: 40px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -168,7 +190,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
-        color: #2D2A43;
+    color: #2D2A43;
 }
 
 .highest-score {
@@ -176,7 +198,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
-        color: #2D2A43;
+    color: #2D2A43;
 }
 
 .correct-ans {
@@ -184,7 +206,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
-        color: #2D2A43;
+    color: #2D2A43;
 }
 
 .icon {
@@ -192,8 +214,9 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     font-size: 18px;
-        color: #2D2A43;
+    color: #2D2A43;
 }
+
 
 .progress-container {
     width: 100%;
@@ -212,21 +235,23 @@ ul {
 .name-all h1 {
     font-size: 40px;
 }
-.name-all{
-     color: #2D2A43;
+
+.name-all {
+    color: #2D2A43;
 }
+
 .details {
     display: flex;
     flex-direction: column;
     gap: 20px;
-     color: #2D2A43;
+    color: #2D2A43;
 }
 
 .buttom-side {
     display: flex;
     padding: 50px;
     justify-content: space-between;
-     color: #2D2A43;
+    color: #2D2A43;
 }
 
 .quizes-list {
@@ -255,12 +280,13 @@ ul {
 }
 
 .quizes button {
-   font-weight: bold;
+    font-weight: bold;
     background-color: #2D2A43;
     color: #FFFFFF;
     border: none;
 
 }
+
 .quizes {
     display: flex;
     flex-direction: column;
@@ -313,4 +339,92 @@ ul {
 
 .achi-view a {
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .menu-side {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .menu-list {
+        display: none;
+        gap: 40px;
+        width: 160px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .menu-top h3{
+        font-size: 18px;
+    }
+
+    .menus a{
+        font-size: 14px;
+    }
+    .score-chat {
+        width: 100%;
+        /* border: 1px solid black; */
+        padding: 10px;
+
+    }
+
+    .scores {
+        display: flex;
+        gap: 10px;
+    }
+
+    .front-img {
+        display: none;
+    }
+
+    .icon {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+    .name-all h1 {
+        font-size: 25px;
+    }
+
+    .buttom-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 4px;
+        /* border: 1px solid black; */
+        align-items: center;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .head-menus {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #menubtn-res {
+        border: none;
+        background: #FFFFFF;
+        cursor: pointer;
+        font-size: 17px;
+    }
 }

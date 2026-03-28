@@ -17,17 +17,19 @@
 
 const menubtn  = document.getElementById("menubtn");
 const menuList = document.getElementById("menuList");
-const aftermenubtn = document.getElementById("menubtn-after");
-const menuListAfter = document.getElementById("after-menu-hide");
+const menuBtnRes = document.getElementById("menubtn-res");
+const head = document.getElementById("head");
 
-menubtn.addEventListener("click",()=>{
-    menuList.style.display ="none";
-    menuListAfter.style.display="block";
+menuBtnRes.addEventListener("click",()=>{
+    menuList.style.display ="flex";
+    head.style.justifyContent="end";
+    menuBtnRes.style.display="none";
 })
 
-aftermenubtn.addEventListener("click",()=>{
-    menuListAfter.style.display="none";
-    menuList.style.display="flex";
+menubtn.addEventListener("click",()=>{
+    menuList.style.display="none";
+    menuBtnRes.style.display="block";
+    head.style.justifyContent="space-between";
 
 })
 
@@ -37,3 +39,4 @@ const highestScore = Number(localStorage.getItem("highestScore")) || 0;
 
 document.getElementById("correctAns").innerText = totalCorrect;
 document.getElementById("highestScore").innerText = highestScore;
+
