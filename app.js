@@ -30,3 +30,5 @@ aftermenubtn.addEventListener("click",()=>{
     menuList.style.display="flex";
 
 })
+
+
