@@ -133,12 +133,20 @@ function loadQuestion() {
         };
 
         optionsDiv.appendChild(btn);
+
     });
 }
 
 function nextQuestion() {
     if (current < questions.length - 1) {
         current++;
+        loadQuestion();
+    }
+}
+
+function prevQuestion() {
+    if (current < questions.length) {
+        current--;
         loadQuestion();
     }
 }
