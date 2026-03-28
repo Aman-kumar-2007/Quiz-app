@@ -32,3 +32,8 @@ aftermenubtn.addEventListener("click",()=>{
 })
 
 
+const totalCorrect = localStorage.getItem("totalCorrect") || 0;
+const highestScore = Number(localStorage.getItem("highestScore")) || 0;
+
+document.getElementById("correctAns").innerText = totalCorrect;
+document.getElementById("highestScore").innerText = highestScore;
