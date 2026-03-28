@@ -242,7 +242,7 @@ ul {
     gap: 10px;
 }
 
-.quizes-ui {
+.quizes a {
     border: 1px solid black;
     height: 50px;
     border-radius: 10px;
@@ -254,6 +254,13 @@ ul {
     color: #FFFFFF;
 }
 
+.quizes button {
+   font-weight: bold;
+    background-color: #2D2A43;
+    color: #FFFFFF;
+    border: none;
+
+}
 .quizes {
     display: flex;
     flex-direction: column;
